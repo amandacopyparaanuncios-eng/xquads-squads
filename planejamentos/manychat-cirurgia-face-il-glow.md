@@ -1,10 +1,10 @@
 # Planejamento ManyChat — Cirurgia Plástica de Face + Método IL Glow
 
-> Perfil: cirurgiã plástica com foco em **cirurgias de face**, integrando **tecnologias** à cirurgia pelo **Método IL Glow**.
+> Perfil: **Dra. Ingrid Luckman**, cirurgiã plástica com foco em **cirurgias de face**, integrando **tecnologias** à cirurgia pelo **Método IL Glow**.
 > Objetivo único de todos os fluxos: **levar o lead ao agendamento da consulta**.
 > Formato: mensagens curtas, com **vídeo, áudio e texto** alternados. Nenhum bloco de texto passa de 3–4 linhas.
 
-Campos entre colchetes (`[Dra. Nome]`, `[link]`, `[tecnologia X]`) devem ser trocados pelos dados reais.
+Campos entre colchetes (`[link]`, `[tecnologia X]`, `[endereço]` etc.) devem ser trocados pelos dados reais.
 
 ---
 
@@ -26,23 +26,23 @@ Gatilho (palavra-chave / story / anúncio / DM)
         │
         ▼
 [F0] Boas-vindas + áudio da Dra. + menu "O que mais te incomoda?"
-        │
- ┌──────┼───────────┬────────────┬─────────────┬──────────────┐
- ▼      ▼           ▼            ▼             ▼              ▼
-[F1]   [F2]        [F3]         [F4]          [F5]           [F6]
-Face e Olhos/     Nariz        Método        Tecnologias    Dúvidas /
-pescoço pálpebras (rino)       IL Glow       de face        objeções
- └──────┴───────────┴────────────┴─────────────┴──────────────┘
+                      │
+ ┌──────────┬─────────┴──┬─────────────┬──────────────┐
+ ▼          ▼            ▼             ▼              ▼
+[F1]       [F2]         [F3]          [F4]           [F5]
+Face e     Olhos/       Método        Tecnologias    Dúvidas /
+pescoço    pálpebras    IL Glow       de face        objeções
+ └──────────┴────────────┴─────────────┴──────────────┘
                               │
                               ▼
-                 [F7] Qualificação rápida (4 perguntas)
+                 [F6] Qualificação rápida (4 perguntas)
                               │
                               ▼
-                 [F8] Agendamento da consulta
+                 [F7] Agendamento da consulta
                               │
                  ┌────────────┴────────────┐
                  ▼                         ▼
-          Agendou → [F9] Confirmação   Não agendou → [F10] Follow-up
+          Agendou → [F8] Confirmação   Não agendou → [F9] Follow-up
 ```
 
 ---
@@ -54,10 +54,9 @@ pescoço pálpebras (rino)       IL Glow       de face        objeções
 | **FACE** | Reels gerais, bio, anúncios | F0 (menu) |
 | **LIFTING** / **PESCOÇO** | Conteúdos de flacidez, contorno, papada | F1 |
 | **OLHAR** / **PÁLPEBRA** | Conteúdos de olhos cansados, bolsas | F2 |
-| **NARIZ** | Conteúdos de rinoplastia | F3 |
-| **GLOW** | Conteúdos do Método IL Glow | F4 |
-| **PELE** / **TECNOLOGIA** | Conteúdos de laser, ultrassom, radiofrequência | F5 |
-| **CONSULTA** / **AGENDAR** | Stories, destaques, CTA final de qualquer post | F8 direto |
+| **GLOW** | Conteúdos do Método IL Glow | F3 |
+| **PELE** / **TECNOLOGIA** | Conteúdos de laser, ultrassom, radiofrequência | F4 |
+| **CONSULTA** / **AGENDAR** | Stories, destaques, CTA final de qualquer post | F7 direto |
 
 **Configuração de comentário (Comment Automation):**
 - Resposta pública automática (variar 3–4 versões para não parecer robô):
@@ -78,7 +77,7 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 
 ### F0 — Boas-vindas e triagem
 
-1. 📝 "Que bom ter você aqui, [nome]! Eu sou a equipe da [Dra. Nome] 💛"
+1. 📝 "Que bom ter você aqui, [nome]! Eu sou a equipe da Dra. Ingrid Luckman 💛"
 2. ⏱ 2 s
 3. 🎧 **Áudio da Dra. (25 s)** — *roteiro no item 5*
 4. ⏱ 3 s
@@ -86,9 +85,9 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 6. 🔘 Botões:
    - Flacidez / rosto e pescoço → F1
    - Olhar cansado → F2
-   - Nariz → F3
-   - Conhecer o Método IL Glow → F4
-   - Mais opções → (Tecnologias → F5 · Tenho dúvidas → F6 · Já quero agendar → F8)
+   - Conhecer o Método IL Glow → F3
+   - Tecnologias para a pele → F4
+   - Mais opções → (Tenho dúvidas → F5 · Já quero agendar → F7)
 
 🏷 `origem_[palavra-chave]`, `entrou_fluxo_face`
 
@@ -96,14 +95,14 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 
 ### F1 — Rejuvenescimento facial (lifting de face e pescoço)
 
-1. 📝 "Flacidez no rosto e no pescoço é uma das queixas que a [Dra. Nome] mais atende 🙌"
+1. 📝 "Flacidez no rosto e no pescoço é uma das queixas que a Dra. Ingrid Luckman mais atende 🙌"
 2. 🎬 **Vídeo (45 s):** "O que é o lifting de face e pescoço — e por que o resultado natural depende da técnica"
 3. ⏱ 4 s
 4. 📝 "Resultado natural = você com cara de descansada, não de 'operada'."
 5. 🔘 "Isso faz sentido pra mim?"
-   - Sim, quero entender se é pra mim → F7
-   - Tenho medo da recuperação → F6 (objeção recuperação)
-   - Dá pra associar tecnologia? → F4
+   - Sim, quero entender se é pra mim → F6
+   - Tenho medo da recuperação → F5 (objeção recuperação)
+   - Dá pra associar tecnologia? → F3
 
 🏷 `interesse_lifting`
 
@@ -117,33 +116,19 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 4. 🎬 **Vídeo (40 s):** bastidores/explicação do procedimento (sem imagens chocantes)
 5. 📝 "E dá pra potencializar o resultado da pele ao redor dos olhos com tecnologia, dentro do Método IL Glow ✨"
 6. 🔘
-   - Quero avaliar meu caso → F7
-   - O que é o IL Glow? → F4
-   - Quanto tempo de recuperação? → F6
+   - Quero avaliar meu caso → F6
+   - O que é o IL Glow? → F3
+   - Quanto tempo de recuperação? → F5
 
 🏷 `interesse_blefaro`
 
 ---
 
-### F3 — Nariz (rinoplastia)
-
-1. 📝 "Rinoplastia hoje busca harmonia com o seu rosto, não um 'nariz padrão' 👃"
-2. 🎬 **Vídeo (45 s):** a visão da Dra. sobre rinoplastia e harmonia facial
-3. ⏱ 3 s
-4. 📝 "Cada nariz pede um planejamento único — e isso começa na consulta."
-5. 🔘
-   - Quero agendar minha avaliação → F7
-   - Tenho dúvidas → F6
-
-🏷 `interesse_rino`
-
----
-
-### F4 — Método IL Glow (fluxo principal / diferencial)
+### F3 — Método IL Glow (fluxo principal / diferencial)
 
 > Este é o fluxo-vitrine. Todos os outros levam a ele pelo menos uma vez.
 
-1. 📝 "O Método IL Glow é a forma como a [Dra. Nome] une **cirurgia + tecnologias** para cuidar do rosto por completo ✨"
+1. 📝 "O Método IL Glow é a forma como a Dra. Ingrid Luckman une **cirurgia + tecnologias** para cuidar do rosto por completo ✨"
 2. ⏱ 2 s
 3. 🎬 **Vídeo da Dra. (60 s):** "O que é o Método IL Glow" — *roteiro no item 5*
 4. ⏱ 4 s
@@ -154,15 +139,15 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 6. ⏱ 3 s
 7. 🎧 **Áudio da Dra. (20 s):** "Por que eu não separo cirurgia de pele"
 8. 🔘
-   - Quero meu plano IL Glow → F7
-   - Quais tecnologias são usadas? → F5
-   - Tenho dúvidas → F6
+   - Quero meu plano IL Glow → F6
+   - Quais tecnologias são usadas? → F4
+   - Tenho dúvidas → F5
 
 🏷 `interesse_ilglow` (tag de maior prioridade)
 
 ---
 
-### F5 — Tecnologias de face aliadas à cirurgia
+### F4 — Tecnologias de face aliadas à cirurgia
 
 1. 📝 "As tecnologias entram para potencializar e prolongar o resultado da cirurgia 💡"
 2. 🔘 "Sobre qual você quer saber?"
@@ -174,14 +159,14 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
    - 📝 "Ela pode ser usada antes, junto ou depois da cirurgia, conforme o seu caso."
 4. 📝 "Quem decide a combinação ideal é a avaliação com a Dra. 😉"
 5. 🔘
-   - Quero minha avaliação → F7
-   - Ver o Método IL Glow → F4
+   - Quero minha avaliação → F6
+   - Ver o Método IL Glow → F3
 
 🏷 `interesse_tecnologia`, `tec_[nome]`
 
 ---
 
-### F6 — Dúvidas e objeções (menu curto)
+### F5 — Dúvidas e objeções (menu curto)
 
 📝 "Qual é a sua principal dúvida?"
 🔘 Recuperação · Medo do resultado artificial · Valores · Anestesia e segurança
@@ -193,13 +178,13 @@ Legenda: 📝 texto · 🎧 áudio · 🎬 vídeo · 🔘 botões · ⏱ delay �
 | **Valores** | "O valor depende do plano (cirurgia + tecnologias). Por isso ele é definido na consulta, após a avaliação 💛" | 📝 só texto |
 | **Segurança** | "Cirurgias feitas em hospital, com equipe e anestesista, e acompanhamento completo." | 🎧 Áudio 20 s |
 
-Após cada resposta: 🔘 **Quero agendar minha consulta** → F7 · **Outra dúvida** → volta ao menu F6 · **Falar com a equipe** → handoff humano
+Após cada resposta: 🔘 **Quero agendar minha consulta** → F6 · **Outra dúvida** → volta ao menu F5 · **Falar com a equipe** → handoff humano
 
 🏷 `objecao_[tipo]`
 
 ---
 
-### F7 — Qualificação rápida (4 perguntas)
+### F6 — Qualificação rápida (4 perguntas)
 
 1. 📝 "Pra equipe te atender melhor, só 4 perguntinhas rápidas 😊"
 2. Pergunta 1 🔘 "Qual a sua faixa de idade?" → 25–34 · 35–44 · 45–54 · 55+ → campo `faixa_idade`
@@ -207,7 +192,7 @@ Após cada resposta: 🔘 **Quero agendar minha consulta** → F7 · **Outra dú
 4. Pergunta 3 🔘 "Quando pensa em realizar?" → Próximos 3 meses · 3–6 meses · Só pesquisando → `momento`
 5. Pergunta 4 📝 "Qual o seu WhatsApp com DDD?" → campo `telefone` (validação de telefone)
 6. 📝 "Perfeito, [nome]! Obrigada 💛"
-7. → F8
+7. → F7
 
 **Pontuação (lead score):**
 - `momento = 3 meses` → +3 · `3–6 meses` → +2 · `pesquisando` → +0
@@ -215,11 +200,11 @@ Após cada resposta: 🔘 **Quero agendar minha consulta** → F7 · **Outra dú
 - `historico = cirurgia ou tecnologias` → +1
 - Score ≥ 4 → 🏷 `lead_quente` + notificação para a secretária
 
-> ⚠️ LGPD: não peça fotos nem dados de saúde pelo direct. Coleta mínima (nome, WhatsApp, interesse). Inclua link da política de privacidade na primeira mensagem de F7.
+> ⚠️ LGPD: não peça fotos nem dados de saúde pelo direct. Coleta mínima (nome, WhatsApp, interesse). Inclua link da política de privacidade na primeira mensagem de F6.
 
 ---
 
-### F8 — Agendamento da consulta
+### F7 — Agendamento da consulta
 
 1. 🎧 **Áudio da Dra. (20 s):** convite pessoal para a consulta — *roteiro no item 5*
 2. ⏱ 3 s
@@ -229,14 +214,14 @@ Após cada resposta: 🔘 **Quero agendar minha consulta** → F7 · **Outra dú
    - **Falar com a secretária no WhatsApp** → link `wa.me/[número]?text=Olá! Vim do Instagram e quero agendar minha consulta de face` 🏷 `clicou_whatsapp`
    - **Escolher horário online** → [link da agenda] 🏷 `clicou_agenda`
    - **Quero que me liguem** → notificação para a equipe com `telefone` 🏷 `pediu_ligacao`
-6. ⏱ 10 min → condição: não clicou em nada → F10
+6. ⏱ 10 min → condição: não clicou em nada → F9
 
 **Notificação interna (ManyChat → e-mail/WhatsApp da equipe):**
 `Novo lead face: [nome] · [telefone] · interesse: [tags] · momento: [momento] · score: [score]`
 
 ---
 
-### F9 — Pós-agendamento (confirmação e aquecimento)
+### F8 — Pós-agendamento (confirmação e aquecimento)
 
 Disparado quando a equipe aplica 🏷 `consulta_agendada` (manual ou via integração).
 
@@ -249,13 +234,13 @@ Disparado quando a equipe aplica 🏷 `consulta_agendada` (manual ou via integra
 
 ---
 
-### F10 — Follow-up de quem não agendou
+### F9 — Follow-up de quem não agendou
 
 Regras do Instagram: mensagens livres só até **24 h após a última mensagem do lead**. Depois disso, apenas com a tag `HUMAN_AGENT` (até 7 dias, por atendente humano). Por isso a sequência é curta:
 
 | Quando | Mensagem |
 |---|---|
-| +10 min | 📝 "Ficou alguma dúvida antes de agendar? Posso te ajudar 😊" 🔘 Tenho uma dúvida → F6 · Quero agendar → F8 |
+| +10 min | 📝 "Ficou alguma dúvida antes de agendar? Posso te ajudar 😊" 🔘 Tenho uma dúvida → F5 · Quero agendar → F7 |
 | +3 h | 🎬 **Vídeo curto (30 s):** depoimento/relato de paciente (com autorização e dentro das normas do CFM) + 🔘 Quero agendar |
 | +22 h | 🎧 **Áudio da Dra. (15 s):** "Passei pra lembrar que a minha agenda de consultas está aberta. Se fizer sentido pra você, me chama aqui 💛" 🔘 Agendar agora |
 | Após 24 h | Se `telefone` preenchido → secretária assume pelo WhatsApp (1 contato humano). Se não → lead vai para público de remarketing (tag `nao_agendou`) |
@@ -265,8 +250,8 @@ Regras do Instagram: mensagens livres só até **24 h após a última mensagem d
 ## 4. Tags e campos personalizados
 
 **Tags**
-- Origem: `origem_face`, `origem_lifting`, `origem_olhar`, `origem_nariz`, `origem_glow`, `origem_pele`, `origem_anuncio`, `origem_story`
-- Interesse: `interesse_lifting`, `interesse_blefaro`, `interesse_rino`, `interesse_ilglow`, `interesse_tecnologia`
+- Origem: `origem_face`, `origem_lifting`, `origem_olhar`, `origem_glow`, `origem_pele`, `origem_anuncio`, `origem_story`
+- Interesse: `interesse_lifting`, `interesse_blefaro`, `interesse_ilglow`, `interesse_tecnologia`
 - Objeção: `objecao_recuperacao`, `objecao_artificial`, `objecao_valor`, `objecao_seguranca`
 - Funil: `entrou_fluxo_face`, `qualificado`, `lead_quente`, `clicou_whatsapp`, `clicou_agenda`, `pediu_ligacao`, `consulta_agendada`, `compareceu`, `nao_agendou`
 
@@ -280,18 +265,18 @@ Regras do Instagram: mensagens livres só até **24 h após a última mensagem d
 ## 5. Roteiros das mídias (curtos)
 
 ### 🎧 Áudio de boas-vindas (F0) — ~25 s
-> "Oi, aqui é a [Dra. Nome]! Que bom que você chegou até aqui. Meu trabalho é cuidar do rosto de um jeito completo, unindo cirurgia e tecnologia, sempre com resultado natural. Vou te mostrar alguns conteúdos rapidinhos e, se fizer sentido, a gente se conhece numa consulta. Me conta o que mais te incomoda?"
+> "Oi, aqui é a Dra. Ingrid Luckman! Que bom que você chegou até aqui. Meu trabalho é cuidar do rosto de um jeito completo, unindo cirurgia e tecnologia, sempre com resultado natural. Vou te mostrar alguns conteúdos rapidinhos e, se fizer sentido, a gente se conhece numa consulta. Me conta o que mais te incomoda?"
 
-### 🎬 Vídeo "O que é o Método IL Glow" (F4) — ~60 s
+### 🎬 Vídeo "O que é o Método IL Glow" (F3) — ~60 s
 - **0–5 s (gancho):** "Por que algumas cirurgias de face parecem 'cansadas' depois de um tempo?"
 - **5–20 s:** "Porque a cirurgia trata a estrutura, mas a pele também envelhece: textura, manchas, viço."
 - **20–45 s:** "No Método IL Glow eu planejo os dois juntos: a cirurgia certa para o seu rosto e as tecnologias certas para a sua pele, antes, durante e depois."
 - **45–60 s (CTA):** "Cada plano é individual. Clica no botão aqui embaixo que a minha equipe te ajuda a agendar sua avaliação."
 
-### 🎧 Áudio "Por que não separo cirurgia de pele" (F4) — ~20 s
+### 🎧 Áudio "Por que não separo cirurgia de pele" (F3) — ~20 s
 > "Uma cirurgia bonita com uma pele sem viço não entrega o resultado completo. Por isso eu sempre penso no rosto como um todo. É isso que o IL Glow faz."
 
-### 🎧 Áudio convite para consulta (F8) — ~20 s
+### 🎧 Áudio convite para consulta (F7) — ~20 s
 > "Na consulta eu olho o seu rosto com calma, entendo o que te incomoda e te explico exatamente o que eu indicaria, sem pressa e sem compromisso de decidir na hora. Vai ser um prazer te receber."
 
 ### 🎬 Vídeo de lifting (F1) — ~45 s
@@ -327,9 +312,9 @@ Seguir a **Resolução CFM nº 2.336/2023** (publicidade médica):
 |---|---|---|
 | Entrada | Leads que abriram o fluxo | — (base) |
 | Engajamento | % que clicou no 1º botão do F0 | > 60% |
-| Conteúdo | % que chegou ao F4 (IL Glow) | > 35% |
-| Qualificação | % que concluiu o F7 | > 40% |
-| Conversão | % que clicou em agendar (F8) | > 20% |
+| Conteúdo | % que chegou ao F3 (IL Glow) | > 35% |
+| Qualificação | % que concluiu o F6 | > 40% |
+| Conversão | % que clicou em agendar (F7) | > 20% |
 | Resultado | Consultas agendadas / leads | 8–15% |
 | Comparecimento | Compareceu / agendou | > 70% |
 
@@ -342,7 +327,7 @@ Palavras-chave e vídeos com menor retenção devem ser trocados a cada 30 dias.
 - [ ] Conectar Instagram (e WhatsApp, se usar) ao ManyChat
 - [ ] Criar tags e campos personalizados (item 4)
 - [ ] Gravar mídias: 5 áudios + 6 a 8 vídeos (item 5)
-- [ ] Montar fluxos F0 a F10 na ordem: F0 → F4 → F7 → F8 → demais
+- [ ] Montar fluxos F0 a F9 na ordem: F0 → F3 → F6 → F7 → demais
 - [ ] Configurar automações de comentário por palavra-chave (item 2)
 - [ ] Configurar notificação interna de lead para a secretária
 - [ ] Criar link de WhatsApp com mensagem pré-preenchida e/ou link de agenda
