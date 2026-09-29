@@ -36,17 +36,24 @@ Regras:
 - Se vier `next_actions` com ações `read_only: true` obrigatórias, execute-as com `hide_ui: true` e siga; não coloque esse conteúdo na mensagem e nunca execute ações que exigem confirmação.
 - Se uma chamada falhar por erro transitório, tente de novo uma vez.
 
-## 3. Google Ads (navegador — Claude in Chrome)
+## 3. Google Ads (Windsor.ai)
 
-Não há MCP do Google. Para cada customer ID do cadastro:
-1. Abra `https://ads.google.com/aw/campaigns?ocid=` com a conta (troque de conta pelo seletor se necessário).
-2. Ajuste o período igual ao do passo 1 (Ontem ou Últimos 7 dias).
-3. Por campanha com custo > 0, leia: Custo, Conversões, Custo/conv., CTR, Valor conv.
-4. ROAS = Valor conv. ÷ Custo (só se houver valor de conversão).
+Use o conector **Windsor.ai** (`mcp__Windsor_ai__get_data`, `connector: "google_ads"`), numa única chamada com todos os customer IDs do cadastro em `accounts`:
+
+- Período: `date_from`/`date_to` = data de ontem (terça a sexta) ou `date_preset: "last_7d"` (segunda).
+- `fields: ["account_id","account_name","campaign","campaign_type","campaign_status","spend","clicks","impressions","conversions","conversion_value"]`
+- Para o pace: outra chamada `date_preset: "last_7d"`, `fields: ["account_id","spend"]`.
+
+Regras:
+- Rotule pelo `account_id` de cada linha (não pela ordem).
+- Campanhas com `spend` 0 e `campaign_status` ENABLED que tinham gasto nos dias anteriores → **alerta: provável saldo zerado ou problema de pagamento**.
+- `conversion_value` igual ao número de conversões (valor 1 por conversão) **não é faturamento** → ROAS "–". Só calcule ROAS quando o valor for monetário (campanhas de venda).
+- Agrupe por `campaign_type`/objetivo como na Meta; clientes com várias campanhas de leads Search somam num bloco "Leads (Search)", salvo pedido de separar.
+- Se o Windsor.ai não estiver conectado nesta sessão, use o navegador (Claude in Chrome) em `ads.google.com`; sem nenhum dos dois, caia no passo 5.
 
 Customer ID `preencher` → pule e avise no fim.
 
-## 4. Saldo e pace (navegador)
+## 4. Saldo e pace (navegador — nem o conector da Meta nem o Windsor.ai expõem saldo)
 
 - **Meta:** `https://business.facebook.com/billing_hub/payment_settings?asset_id=<ad_account_id>` → "Saldo disponível" (contas pré-pagas/PIX).
 - **Google:** Faturamento → Resumo → saldo/crédito restante.
@@ -58,8 +65,8 @@ Customer ID `preencher` → pule e avise no fim.
 ## 5. Sem navegador (fallback)
 
 Se as ferramentas do Chrome não estiverem disponíveis (ex.: sessão na nuvem), **não trave**:
-1. Entregue as mensagens da Meta normalmente, com `Saldo: aguardando` no lugar do saldo.
-2. Numa única mensagem, peça ao usuário para colar, por cliente: saldo Meta; e, para clientes Google, Custo, Conversões, CTR, Valor conv. por campanha e o saldo Google.
+1. Entregue as mensagens da Meta e do Google (Windsor.ai) normalmente, com `Saldo: aguardando` no lugar do saldo.
+2. Numa única mensagem, peça ao usuário para colar o saldo de cada conta (Meta e Google), ou "cartão". Só peça os números do Google se o Windsor.ai também estiver indisponível.
 3. Quando os dados chegarem, complete os pace e as seções Google, e reenvie só as mensagens afetadas.
 
 ## 6. Cálculos
