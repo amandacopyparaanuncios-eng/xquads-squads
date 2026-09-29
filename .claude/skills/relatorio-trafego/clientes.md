@@ -20,4 +20,5 @@ Edite esta tabela para incluir/remover clientes. A skill lê tudo daqui.
 
 ## Fora do relatório
 - Lua Mundi (126654237543178) e Luiza Occhi (1089151007124055): não são mais clientes.
-- Dra Ingrid Luckmann (1568470863610848), CA 02 MedBrand (957544795935898) e Amanda Sobrinho (1749356866341256): não incluídas na divisão atual — adicione uma linha acima para incluir.
+- Dra Ingrid Luckmann (1568470863610848) e CA 02 MedBrand (957544795935898): cliente separado, fora deste relatório.
+- Amanda Sobrinho (1749356866341256): conta pessoal, fora deste relatório.
