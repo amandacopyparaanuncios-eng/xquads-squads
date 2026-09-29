@@ -74,3 +74,7 @@ Veja todos os agentes, bios e especialidades em: [xquads.vercel.app/xquads](http
 ---
 
 **Xquads by Synkra**
+
+## Skill: Meta Ads Analyst
+
+Skill do Claude Code em `.claude/skills/meta-ads-analyst/` que analisa uma conta de Meta Ads e sugere melhorias. Puxa métricas via MCP (META_MCP/Windsor), complementa pelo Gerenciador via Claude in Chrome quando faltar dado, e interpreta por objetivo da campanha, funil, tipo de negócio (local, turismo, e-commerce, infoproduto, B2B) e benchmark. O contexto do cliente é lido do ClickUp na hora da análise. Somente leitura por padrão; alterações só com confirmação por ação.
