@@ -11,6 +11,29 @@
 - A coluna **Fala** é para ser dita do jeito que a pessoa fala, não decorada palavra por palavra. Se travar, troque por suas palavras e mantenha a ideia.
 - Formato pensado para Reels, TikTok e anúncio em vídeo vertical (9:16).
 
+## Como montar uma CTA que leva à compra
+
+Toda CTA final segue esta fórmula, nesta ordem:
+
+1. **Ação de compra clara:** "Garanta o projeto", "Clique no botão abaixo". Nunca "dá uma olhada" ou "vê se gosta".
+2. **Benefício concreto:** o que a pessoa ganha (primeira venda esta semana, produto pronto antes do Natal).
+3. **Redução de risco:** garantia de **[__] dias**, preço ou conta que fecha.
+4. **Motivo para agir agora:** prazo de produção do Natal, **[data]** de corte, bônus ou condição que termina.
+
+**Modelo:** "Garanta o projeto agora no botão abaixo. Você recebe [benefício], tem [__] dias de garantia e ainda dá tempo de produzir antes do Natal."
+
+### Banco de CTAs para trocar no final de qualquer vídeo
+
+- "Clique no botão abaixo e garanta o projeto da **Necessaire Make** por **R$ [__]**. São **[__] dias de garantia** e você já começa hoje."
+- "Garanta agora o projeto da **Térmica Mimo** e comece a vender por **R$ 145** ainda esta semana."
+- "O projeto pode se pagar com **[__] vendas**. Clique em **Quero o projeto** e faça a conta na prática."
+- "Quem entrar até **[data]** ainda produz e vende antes do Natal. Garanta o seu agora."
+- "Garanta hoje, teste por **[__] dias** e, se não fizer sentido, o seu dinheiro volta. Sem risco."
+- "Leve os dois projetos, **Necessaire Make** e **Térmica Mimo**, e monte o kit de presente antes do Natal."
+- "Só hoje: **[bônus/condição]** junto com o projeto. Clique no botão abaixo e aproveite."
+
+**Botões de anúncio recomendados:** Comprar agora · Quero o projeto · Garantir minha vaga.
+
 ## Dados para confirmar antes de gravar
 
 - [ ] Preço do projeto Necessaire Make na Hotmart: **R$ [___]**
@@ -56,10 +79,10 @@
 | Foto da [Maria] com a necessaire ou print do papo dela | "A [Maria] me chamou no [WhatsApp] no começo do mês dizendo que não sabia por onde começar. Ela costurava pra família, mas nunca tinha vendido uma peça." |
 | Mostre a necessaire pronta, de perto: costura, zíper, forro | "Ela pegou o projeto da **Necessaire Make**, seguiu o passo a passo e fez a primeira. Essa necessaire vende por **R$ 130** pro cliente final. E sabe o que ela percebeu? Que a peça se vendia sozinha, porque é bonita, tem acabamento bom e serve pra presente." |
 | Print da venda, story ou mensagem da cliente dela (real) | "Em **[1 mês]** ela vendeu **[5]** peças pra **[amigas, vizinhas e clientes do Instagram]**. Deu **R$ [250]** de lucro. Pode parecer pouco, mas foi o primeiro mês, sem anúncio e sem loja." |
-| Você à câmera | "Se ela conseguiu começando do zero, imagina você que já costura. Tem o passo a passo completo da necessaire e de como apresentar pra cliente. O link tá aqui embaixo. Clica e vê o projeto." |
+| Você à câmera | "Se ela conseguiu começando do zero, você que já costura pode chegar lá mais rápido. O projeto da **Necessaire Make** traz o passo a passo completo para produzir e para apresentar a peça à cliente. O investimento é de **R$ [__]**, pode se pagar com **[__] vendas** e você tem **[__] dias de garantia**. Clique no botão abaixo, garanta o seu projeto agora e comece a sua primeira necessaire ainda hoje." |
 
-**CTA:** "Clica no link e vê o projeto completo."
-**Legenda:** "A [Maria] vendeu [5] necessaires no primeiro mês. Resultados variam de pessoa para pessoa. Link na bio."
+**CTA:** "Clique no botão abaixo, garanta o projeto da Necessaire Make por **R$ [__]** e comece a produzir hoje, com **[__] dias de garantia**."
+**Legenda:** "A [Maria] vendeu [5] necessaires no primeiro mês. Resultados variam de pessoa para pessoa. Garanta o seu projeto pelo link da bio."
 **Adapte:** nome, quantidade, valor, prazo, onde ela vendeu.
 
 ---
@@ -82,9 +105,9 @@
 | Aluna 4 | "A [Nome 4]: **[__]** peças, **R$ [__]**." |
 | Aluna 5 | "E a [Nome 5]: **[__]** peças, **R$ [__]**." |
 | Você à câmera | "Por que cada uma teve um resultado? Porque cada uma se dedicou de um jeito. Uma vendeu só pra [amigas]. Outra postou nos stories todo dia. Outra levou no [ateliê/feira]. O produto é o mesmo, a necessaire que vende por **R$ 130**. O que muda é o quanto você coloca em prática." |
-| Você à câmera | "Se você quer começar, o projeto tá no link. **Resultados variam**, mas o passo a passo é o mesmo pra todas." |
+| Você à câmera | "Se você quer começar, o projeto está no botão abaixo. **Resultados variam**, mas o passo a passo é o mesmo para todas, e você tem **[__] dias de garantia** para testar sem risco. Garanta o seu agora e comece ainda esta semana." |
 
-**CTA:** "Link na descrição."
+**CTA:** "Garanta o projeto agora pelo botão abaixo e comece a sua primeira venda ainda esta semana."
 **Nota:** se não tiver 5 alunas, use 3. Nunca invente a quantidade.
 
 ---
@@ -103,9 +126,9 @@
 | Print da mensagem (real), com a foto da aluna cobrindo nome se ela não autorizar | (gancho) |
 | Zoom na mensagem, lendo | "A [Ana] me mandou isso depois da **primeira venda**: '[reproduza o depoimento real]'." |
 | Você à câmera | "Ela vendeu a necessaire por **R$ 130**, pra uma amiga que viu no story. E o mais legal não foi o dinheiro: foi ver que ela consegue." |
-| Você à câmera | "Se você também quer viver isso, o projeto tá no link. A primeira venda pode ser essa semana." |
+| Você à câmera | "Se você também quer viver isso, garanta o projeto agora. Com o passo a passo você produz a primeira necessaire e pode fazer a sua primeira venda ainda esta semana. Clique em **Quero o projeto** e comece hoje." |
 
-**CTA:** "Sua primeira venda pode ser essa semana. Link abaixo."
+**CTA:** "A sua primeira venda pode ser esta semana. Clique no botão abaixo e garanta o projeto hoje."
 **Cuidado:** só publique com autorização da aluna.
 
 ---
@@ -125,9 +148,9 @@
 | Mostre gavetas ou prateleira com peças paradas | "Muita costureira aprende a fazer, faz bonito, posta e… silêncio. Ninguém compra. Aí bate a dúvida: será que meu preço tá alto? Será que a peça é feia? Não é isso." |
 | Você à câmera, tom de explicação | "O problema é que você faz o que **você** gosta, e não o que a cliente **quer comprar**. Produto que vende tem três coisas: a cliente já procura por ele, tem um preço que ela aceita pagar e dá margem pra você." |
 | Mostre a **Necessaire Make** pronta | "A **Necessaire Make** é assim. Vende por **R$ 130** e as clientes pedem, porque é presente, é útil e é bonita. O projeto já vem pensado pra isso: você sabe o que fazer **e** como apresentar." |
-| Você à câmera | "Quer deixar de ter peça parada e ter produto que sai? Clica no link e dá uma olhada no projeto." |
+| Você à câmera | "Quer deixar de ter peça parada e passar a ter um produto que sai? Garanta agora o projeto da **Necessaire Make**, produza a primeira peça esta semana e coloque na vitrine o que a cliente realmente compra. Clique no botão abaixo." |
 
-**CTA:** "Link na bio."
+**CTA:** "Garanta o projeto pelo botão abaixo e troque a peça parada por um produto que vende."
 
 ---
 
@@ -144,7 +167,7 @@
 | Escreva na tela conforme fala | "A necessaire vende por **R$ 130**. O material custa uns **R$ [__]**. Sobra **R$ [__]** em cada peça." |
 | Multiplique na tela | "Vendendo **[5]** por mês: **R$ [__]**. Vendendo **[8]**: **R$ [__]**. E isso com uma única peça." |
 | Mostre a **Térmica Mimo** | "Agora pensa na **Térmica Mimo**. Ela vende por **R$ 145**. Duas peças, dois públicos e mais vendas na mesma semana." |
-| Você à câmera | "Claro que cada caso é um caso, resultados variam. Mas a conta fecha. O projeto tá no link se você quiser começar." |
+| Você à câmera | "Cada caso é um caso e os resultados variam, mas a conta fecha. Se ela fecha para você também, garanta o projeto agora: são **R$ [__]** de investimento que podem se pagar com **[__] vendas**. O botão está logo abaixo." |
 
 **Adapte:** use o custo real do material. **Não prometa lucro sem base.**
 
@@ -165,7 +188,7 @@
 | Mostre uma necessaire de loja barata ao lado da **Make** | "Uma necessaire de loja custa R$ 30 e dura três meses. A cliente sabe disso. Quando ela compra uma peça **feita à mão**, ela compra acabamento, exclusividade e durabilidade." |
 | Close na costura, forro, zíper, tecido | "Olha a costura. O forro. O zíper. Isso é o que faz ela pagar **R$ 130** sem pestanejar. E quando a cliente presenteia, ainda mais: ninguém quer dar uma necessaire de R$ 30 de presente." |
 | Prints de clientes reais elogiando | "A [Maria] vendeu **[__]** dessa para **[tipo de cliente]** sem baixar o preço. Quando você apresenta bem, a cliente entende o valor." |
-| Você à câmera | "O projeto te ensina a fazer **e** a apresentar. Clica no link e vê como funciona." |
+| Você à câmera | "O projeto te ensina a fazer **e** a apresentar a peça para a cliente aceitar o preço de **R$ 130**. Garanta o seu agora, com **[__] dias de garantia**, e comece a vender peças que as clientes valorizam." |
 
 ---
 
@@ -184,7 +207,7 @@
 | Mostre a **Térmica Mimo** aberta, com a mamadeira dentro | "A **Térmica Mimo** mantém a mamadeira na temperatura certa por mais tempo e ainda é linda. Dá pra levar no passeio, na consulta, na casa da avó." |
 | Close nos detalhes: alça, bolso, acabamento | "É um produto que a mãe **procura**. Você não precisa convencer ninguém de que ela precisa, só mostrar que a sua é bonita e bem-feita." |
 | Print de venda real | "A [Joana] vendeu **[__]** num [chá de bebê / grupo de mães] e ganhou **R$ [__]**." |
-| Você à câmera | "Se você quer um produto com saída garantida entre as mães, o projeto da **Mimo** está no link." |
+| Você à câmera | "Se você quer um produto com saída garantida entre as mães, garanta agora o projeto da **Térmica Mimo**. Você aprende a fazer e começa a vender por **R$ 145**. Clique no botão abaixo e comece hoje." |
 
 **Cuidado:** não prometa benefício técnico (tempo exato de temperatura) sem testar. Use o que for comprovado.
 
@@ -202,7 +225,7 @@
 | Embrulho de presente com a Mimo | (gancho) |
 | Mostre a peça com laço, embalada | "A cada mês tem um chá de bebê, um enxoval ou uma amiga que acabou de ganhar filho. É um presente bonito, útil e que a pessoa lembra de quem deu." |
 | Mostre a embalagem e etiqueta | "Com ticket de **R$ 145**, você vende bem e ainda pode personalizar com o nome do bebê." |
-| Você à câmera | "Quem faz e vende essa peça tem saída o ano todo. O projeto completo tá no link." |
+| Você à câmera | "Quem faz e vende essa peça tem saída o ano todo. Garanta agora o projeto completo da **Mimo** e comece a produzir para o próximo chá de bebê. Clique no botão abaixo." |
 
 ---
 
@@ -223,7 +246,7 @@
 | Mostre tela com a conta ou papel | "O projeto da **Necessaire Make** custa **R$ [__]**. A necessaire você vende por **R$ 130**. Com **[__] peças** vendidas o projeto já se pagou. A partir daí, é lucro." |
 | Mostre a peça e a etiqueta de preço | "Se você vender **[8] unidades**, são **R$ [1.040]** de faturamento. Se o material for **R$ [__]**, sobram **R$ [__]**. Isso é **[3x]** o que você investiu." |
 | Print real de aluna | "As alunas **[__]** já venderam **[__]** no primeiro mês." *(só se for real)* |
-| Você à câmera | "Claro, **resultados variam**. Mas se a conta fecha pra você, vale olhar. Link na descrição." |
+| Você à câmera | "Os **resultados variam**, mas se a conta fecha para você, o momento é agora: garanta o projeto antes do fim de ano e chegue ao Natal com produto pronto e caixa. Clique no botão abaixo." |
 
 **Atenção:** só use "3x" se a conta real sustentar.
 
@@ -241,7 +264,7 @@
 | Você segurando a necessaire | (gancho) |
 | Escreva na tela a conta | "Esta necessaire sai por **R$ [__]** de material e vende por **R$ 130**. É uma margem de **até [80]%** sobre o que você investe na peça." |
 | Mostre outra peça de ateliê de margem baixa | "Muita peça do ateliê dá trabalho e sobra pouco. O segredo é ter produtos de **margem alta**, que você faz rápido e vende bem." |
-| Você à câmera | "Quer ver como o projeto te ajuda a ter esse tipo de peça? Clica no link." |
+| Você à câmera | "Quer ter peças de margem alta no seu ateliê? Garanta o projeto agora, faça a conta com o seu custo real e comece a lucrar já nas primeiras vendas. Clique no botão abaixo." |
 
 **Atenção:** só use o percentual depois de conferir a conta com o custo real.
 
@@ -260,7 +283,7 @@
 | Mostre o plano na tela | "São **[8] peças** em 30 dias. Isso dá **duas por semana**. Pode vender **uma pra amiga, uma pra vizinha, uma pelo story**." |
 | Conta na tela | "**[8] × R$ 130 = R$ [1.040]**. Menos o material, sobram **R$ [__]** de lucro." |
 | Print de aluna | "A [Maria] chegou em **[__]** vendas em **[__]**." *(real)* |
-| Você à câmera | "O passo a passo de como produzir e vender tá no projeto. Link na bio." |
+| Você à câmera | "O passo a passo de produção e de venda está no projeto. Garanta o seu agora, faça a primeira peça esta semana e comece a contar as **[8]** vendas. Clique no botão abaixo." |
 
 ---
 
@@ -277,7 +300,7 @@
 | Você à câmera | "No fim de ano a cliente compra presente pra todo mundo: amiga, mãe, sogra, professora. E ela quer algo **bonito, útil e feito com carinho**." |
 | Mostre a **Necessaire Make** embalada para presente | "A **Necessaire Make** é isso. Vende por **R$ 130**, cabe em qualquer bolsa e vira presente fácil. Você oferece em kit, com embalagem especial, e aumenta o ticket." |
 | Você à câmera | "Quem começar agora tem tempo de produzir e vender **antes do Natal**. Quem deixa pra dezembro perde a corrida." |
-| Você à câmera | "Clica no link e garante o projeto hoje." |
+| Você à câmera | "Quem começar agora produz e vende antes do Natal, e quem deixa para dezembro fica sem tempo. Garanta o projeto hoje, no botão abaixo, e comece a produzir esta semana." |
 
 ---
 
@@ -293,7 +316,7 @@
 | Calendário com a data do Natal | (gancho) |
 | Conta na tela | "Cada peça leva cerca de **[__] horas**. Se você produzir **[2] por dia**, em **[2] semanas** são **[__] peças** prontas pra vender." |
 | Você à câmera | "As encomendas de Natal começam **[cedo]**. Quem tem produto pronto vende. Quem precisa produzir depois, fica sem tempo." |
-| Você à câmera | "Começa hoje. Link na descrição." |
+| Você à câmera | "Cada dia que passa são peças a menos para o Natal. Garanta o projeto agora e comece a produzir hoje. O botão está logo abaixo." |
 
 ---
 
@@ -310,7 +333,7 @@
 | Mostre cada uma | "Você tem a **Necessaire Make** por **R$ 130** e a **Térmica Mimo** por **R$ 145**. Juntas: **R$ 275**." |
 | Você à câmera | "Uma cliente compra a necessaire pra ela e a Mimo pra presentear a amiga que teve bebê. Você vende duas peças numa conversa só." |
 | Você à câmera | "Se você oferecer o kit com um desconto de **[__]** ou embalagem especial, vira presente fácil de fechar." |
-| Você à câmera | "Os dois projetos estão no link. Escolhe por onde começar." |
+| Você à câmera | "Escolha por onde começar: **Necessaire Make** ou **Térmica Mimo**. Garanta os dois projetos e monte o kit de presente antes do Natal, ou comece por um e adicione o outro depois. Clique no botão abaixo." |
 
 ---
 
@@ -326,7 +349,7 @@
 | Prateleira com peças paradas | (gancho) |
 | Você à câmera | "Toda dona de ateliê já teve isso: você ama a peça, posta, e ninguém compra. Aquilo prende dinheiro e espaço." |
 | Mostre a necessaire e a Mimo | "O ateliê precisa de produtos que **giram**. A necessaire e a Térmica Mimo são fáceis de vender porque são presente, são úteis e têm preço que a cliente aceita." |
-| Você à câmera | "Coloca essas peças na vitrine e veja o que acontece com o giro. O projeto tá no link." |
+| Você à câmera | "Coloque na vitrine o que gira. Garanta agora o projeto da **Necessaire Make** e da **Térmica Mimo** e troque o que está parado por produtos que a cliente procura. Clique no botão abaixo." |
 
 ---
 
@@ -342,7 +365,7 @@
 | Você à câmera | (gancho) |
 | Você à câmera | "Muita gente trava porque acha que precisa investir muito pra ter produto novo. Não precisa." |
 | Conta na tela | "Projeto de **R$ [__]** + material de **R$ [__]** por peça. Na primeira venda de **R$ 130** você já recupera parte. Com **[__] vendas**, o projeto se paga." |
-| Você à câmera | "Começa pequeno, testa, vende. Se funcionar, repete. O link do projeto está aqui embaixo." |
+| Você à câmera | "Comece pequeno, teste e venda. Com o projeto de **R$ [__]** e o material de **R$ [__]** por peça, você recupera o investimento em **[__] vendas** e ainda tem **[__] dias de garantia**. Garanta o seu agora, no botão abaixo." |
 
 ---
 
@@ -358,7 +381,7 @@
 | Foto do ateliê da aluna | (gancho) |
 | Vídeo ou áudio da aluna (real, autorizado) | "A [Nome] tem o ateliê [__] há [__] anos. Ela adicionou a **Necessaire Make** e em **[1 mês]** vendeu **[__]** unidades, **R$ [__]**." |
 | Você à câmera | "Ela já tinha cliente, já tinha estrutura. Só precisava de um produto que encaixasse na vitrine. É isso que o projeto entrega." |
-| Você à câmera | "Se o seu ateliê também quer um produto novo, clica no link." |
+| Você à câmera | "Se o seu ateliê precisa de um produto novo para o fim de ano, garanta agora o projeto da **Necessaire Make** e coloque na vitrine antes do Natal. Clique no botão abaixo." |
 
 **Atenção:** precisa ser real e autorizado.
 
@@ -379,7 +402,7 @@
 | Texto na tela: "Não tenho experiência" | "**'Não tenho experiência.'** O projeto é passo a passo, feito pra quem está começando. Se você sabe [o básico], consegue." |
 | Texto na tela: "Não sei se vou vender" | "**'Não sei se vou vender.'** Olha o que as alunas [__] conseguiram." *(prints reais)* |
 | Texto na tela: "E se eu não gostar?" | "**'E se eu não gostar?'** Você tem **[__] dias de garantia**. Se não fizer sentido, devolvemos." |
-| Você à câmera | "Sem risco. Volta no link e entra hoje." |
+| Você à câmera | "Sem risco: são **[__] dias de garantia**. Se não fizer sentido para você, o seu dinheiro volta. Clique no botão abaixo e entre hoje, antes que o prazo para produzir para o Natal acabe." |
 
 ---
 
@@ -394,7 +417,7 @@
 |---|---|
 | Relógio ou calendário | (gancho) |
 | Você à câmera | "Depois de **[data]** você não tem mais tempo de produzir e vender antes do Natal. Cada dia que passa são **[__] peças** a menos." |
-| Você à câmera | "Se a conta fechou pra você, é hoje. O link está logo abaixo." |
+| Você à câmera | "Se a conta fechou para você, o momento é hoje. Garanta o projeto agora no botão abaixo: depois de **[data]** não há mais tempo de produzir e vender antes do Natal." |
 
 ---
 
@@ -413,7 +436,7 @@
 | Abra o zíper, mostre o interior | "Olha o espaço. Cabe base, paleta, pincéis, batons e ainda sobra. O forro é [__], resistente e fácil de limpar." |
 | Close na costura | "O acabamento é todo feito à mão, com costura reforçada. Essa peça não desbota nem descostura." |
 | Mostre em uso, com maquiagem dentro | "Serve pra bolsa, pra viagem, pra presente. E a cliente ama." |
-| Você à câmera | "Quer aprender a fazer essa necessaire e vender por **R$ 130**? O projeto completo tá no link." |
+| Você à câmera | "Quer aprender a fazer essa necessaire e vender por **R$ 130**? Garanta o projeto completo agora, com **[__] dias de garantia**, e comece a produzir hoje. Clique no botão abaixo." |
 
 *(Faça o mesmo roteiro com a Térmica Mimo trocando as falas por: espaço para mamadeira, isolamento, bolso extra, alça.)*
 
@@ -436,7 +459,7 @@
 >
 > A [Maria] vendeu **[5] peças** no primeiro mês e lucrou **R$ [__]**.
 >
-> 👉 Clique em "Saiba mais" e comece antes do Natal.
+> 👉 Garanta o projeto hoje em "Saiba mais" e chegue ao Natal com produto pronto e caixa.
 >
 > *Resultados variam de pessoa para pessoa.*
 
@@ -448,7 +471,7 @@
 >
 > Por isso o projeto da **Necessaire Make** foi pensado para o cliente final: produto desejado, preço de **R$ 130** e margem que sobra pra você.
 >
-> 👉 Saiba mais no botão abaixo.
+> 👉 Garanta o projeto da Necessaire Make por **R$ [__]** no botão abaixo e comece a produzir hoje.
 
 ### Copy 3: Prova social
 
@@ -460,7 +483,7 @@
 >
 > Cada uma no seu ritmo. O projeto é o mesmo pra todas.
 >
-> 👉 Clique em "Saiba mais" e veja como funciona. *Resultados variam.*
+> 👉 Garanta o seu projeto em "Saiba mais" e comece a sua primeira venda ainda este mês. *Resultados variam.*
 
 ### Copy 4: Matemática (curta)
 
@@ -470,7 +493,7 @@
 >
 > Com **[8] peças** no mês, são **R$ [__]** no bolso.
 >
-> Faça a conta e veja se o projeto se paga. 👇
+> Faça a conta e garanta o projeto agora no botão abaixo. 👇
 
 ### Copy 5: Kit
 
@@ -478,7 +501,7 @@
 >
 > **Necessaire Make** (R$ 130) + **Térmica Mimo** (R$ 145) = um kit de presente completo.
 >
-> Escolha o projeto e comece a produzir agora.
+> Garanta os dois projetos no botão abaixo e monte o kit de presente antes do Natal.
 
 ## Headlines (título do anúncio)
 
@@ -493,9 +516,9 @@
 
 ## Descrições curtas
 
-- "Passo a passo completo. Comece hoje."
-- "Produza e venda antes do Natal."
-- "Projeto pensado para vender."
+- "Garanta o projeto hoje e comece a produzir."
+- "Produza e venda antes do Natal. Garanta o seu."
+- "Projeto pensado para vender. Compre agora."
 
 ---
 
@@ -505,15 +528,15 @@
 
 > Oi, [nome]! 💕 Vi que você se interessou pelo projeto da **Necessaire Make**.
 > Posso te perguntar: você já vende peças ou está começando agora?
-> *(Depois de responder:)* Então vai gostar. A necessaire vende por **R$ 130** e o projeto te ensina a fazer e a vender. Quer que eu te mande o link?
+> *(Depois de responder:)* Então você vai gostar. A necessaire vende por **R$ 130** e o projeto te ensina a fazer e a vender. Hoje ele está por **R$ [__]**, com **[__] dias de garantia**. Posso te enviar o link para garantir agora?
 
 ### Follow-up em 24h
 
-> Oi, [nome]! Só passando pra saber se ficou alguma dúvida sobre o projeto. A [Maria] começou igual a você e vendeu **[5]** no primeiro mês. Posso te ajudar a escolher por onde começar?
+> Oi, [nome]! Só passando pra saber se ficou alguma dúvida sobre o projeto. A [Maria] começou igual a você e vendeu **[5]** no primeiro mês. Posso te enviar o link para você garantir o seu hoje?
 
 ### Follow-up final (72h)
 
-> [Nome], o prazo pra produzir antes do Natal está acabando. Se ainda quer garantir, o link está aqui: [link]. Qualquer dúvida é só chamar. 🎄
+> [Nome], o prazo para produzir antes do Natal acaba em **[data]**. Garanta o projeto agora: [link]. Você tem **[__] dias de garantia**. Se ainda tiver dúvida, me chame que eu respondo agora. 🎄
 
 ---
 
