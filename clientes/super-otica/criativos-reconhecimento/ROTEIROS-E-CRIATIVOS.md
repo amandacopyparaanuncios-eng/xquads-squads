@@ -10,8 +10,8 @@ Tarefa ClickUp: [Criar criativos de reconhecimento para as óticas](https://app.
 - Sugestão de configuração: objetivo Reconhecimento (alcance), raio de 3–5 km ao redor de cada loja, 18+; frequência 2–3/semana; depois remarketing de quem viu 50%+ do vídeo para a campanha de mensagens.
 
 ## A preencher (não existia no ClickUp)
-- Endereço de cada loja, horário, fotos reais da fachada/interior, logo e paleta oficial, oferta vigente.
-- Os PNGs usam paleta **provisória** (azul/âmbar) e ícone genérico; trocar por identidade da marca.
+- Endereço de cada loja, horário, fotos reais da fachada/interior, arquivos originais do logo, oferta vigente.
+- Os PNGs seguem o modelo enviado pelo cliente (`assets/modelo-referencia.png`): fundo amarelo, painéis pretos, tipografia itálica pesada. Logo e armações são recortes desse modelo e a fonte é aproximada; trocar pelo logo original e pela fonte da marca (o texto "consulte regulamento" do modelo foi mantido).
 - Evitar promessas de saúde ("resolva seu problema de vista") e preços sem confirmação do cliente (políticas Meta).
 
 ## Criativos estáticos (pasta `png/`, feed 1080x1350 e story 1080x1920)

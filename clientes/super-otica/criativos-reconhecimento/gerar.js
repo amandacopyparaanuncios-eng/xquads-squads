@@ -1,51 +1,58 @@
-// Gera os criativos estáticos (PNG) a partir dos conceitos abaixo.
+// Gera os criativos estáticos (PNG) no estilo do modelo da Super Ótica (assets/modelo-referencia.png).
+// Logo e armações são recortes do próprio modelo; trocar por arquivos originais quando o cliente enviar.
 // Uso: NODE_PATH=$(npm root -g) node gerar.js
 const { chromium } = require('playwright');
 const path = require('path');
+const ref = 'data:image/png;base64,' + require('fs').readFileSync(path.join(__dirname, 'assets/modelo-referencia.png')).toString('base64');
 
-// Paleta provisória — trocar pelas cores da marca quando o cliente enviar o manual.
-const C = { azul: '#0B2A5B', azul2: '#123F86', ambar: '#FFB400', claro: '#F6F8FC', branco: '#FFFFFF' };
+const AM = '#FFD000', PR = '#0E0E0E', BR = '#FFFFFF';
+const calendario = `<svg viewBox="0 0 64 64" fill="none" stroke="${AM}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="48" height="44" rx="6"/><path d="M8 26h48M20 6v12M44 6v12"/></svg>`;
+const pin = `<svg viewBox="0 0 24 24" fill="${AM}"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>`;
+const oculos = `<svg viewBox="0 0 200 80" fill="none" stroke="${AM}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="22" width="76" height="50" rx="14"/><rect x="114" y="22" width="76" height="50" rx="14"/><path d="M86 38h28"/></svg>`;
 
-const oculos = (cor) => `<svg viewBox="0 0 200 80" fill="none" stroke="${cor}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="45" r="30"/><circle cx="150" cy="45" r="30"/><path d="M80 42 Q100 28 120 42"/><path d="M20 40 L6 24"/><path d="M180 40 L194 24"/></svg>`;
-const pin = (cor) => `<svg viewBox="0 0 24 24" fill="${cor}"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>`;
-
+// l1: linha branca grande | l2: linha amarela (faixa) | l3: caixa preta secundária | l4: pílula branca | rod: pílula preta
 const conceitos = [
-  { id: '01-estamos-aqui', tema: 'azul', topo: 'ÓTICA NA SUA REGIÃO', titulo: 'A Super Ótica<br>está pertinho<br>de você.', sub: 'Óculos de grau e solar em <b>Mogi das Cruzes</b>.', rodape: 'Venha conhecer a loja' },
-  { id: '02-vizinha', tema: 'claro', topo: 'ÓTICA DO SEU BAIRRO', titulo: 'Sua próxima<br>ótica é<br><em>aqui do lado.</em>', sub: 'Passe na Super Ótica e conheça nosso espaço.', rodape: 'Mogi das Cruzes · [ENDEREÇO]' },
-  { id: '03-grau-e-solar', tema: 'ambar', topo: 'GRAU E SOLAR', titulo: 'Armações<br>pra todo<br>estilo.', sub: 'Escolha com calma, experimente e leve o que combina com você.', rodape: 'Super Ótica · Mogi das Cruzes' },
-  { id: '04-atendimento', tema: 'azul', topo: 'ATENDIMENTO ESPECIALIZADO', titulo: 'Aqui você<br>é atendido<br>de verdade.', sub: 'Equipe pronta pra te ajudar a escolher com tranquilidade.', rodape: 'Visite a Super Ótica' },
-  { id: '05-condicoes', tema: 'claro', topo: 'CONDIÇÕES FACILITADAS', titulo: 'Cabe no<br>seu bolso,<br><em>cabe no seu estilo.</em>', sub: 'Pergunte na loja pelas condições de pagamento.', rodape: 'Super Ótica · Mogi das Cruzes' },
+  { id: '01-estamos-aqui', icone: oculos, l1: 'ÓTICA PERTO<br>DE VOCÊ!', l2: 'CONHEÇA A SUPER ÓTICA', l3a: 'GRAU E', l3b: 'SOLAR', l4: 'EM MOGI DAS CRUZES!', rod: 'VENHA NOS VISITAR' },
+  { id: '02-vizinha', icone: pin, l1: 'SUA ÓTICA<br>AQUI DO LADO!', l2: 'PASSE E CONHEÇA NOSSO ESPAÇO', l3a: 'ATENDIMENTO', l3b: 'DE PERTO', l4: 'ÓTICA DO SEU BAIRRO!', rod: '[ENDEREÇO] · MOGI' },
+  { id: '03-grau-e-solar', icone: oculos, l1: 'ARMAÇÕES<br>PRA TODO ESTILO!', l2: 'ESCOLHA COM CALMA NA LOJA', l3a: 'EXPERIMENTE', l3b: 'À VONTADE', l4: 'GRAU E SOLAR!', rod: 'SUPER ÓTICA · MOGI DAS CRUZES' },
+  { id: '04-atendimento', icone: pin, l1: 'ATENDIMENTO<br>ESPECIALIZADO!', l2: 'EQUIPE PRONTA PRA TE AJUDAR', l3a: 'ESCOLHA', l3b: 'COM CONFIANÇA', l4: 'VISITE A LOJA!', rod: '[ENDEREÇO] · MOGI' },
+  { id: '05-condicoes', icone: calendario, l1: 'CONDIÇÕES<br>FACILITADAS!', l2: 'PERGUNTE NA LOJA', l3a: 'PAGAMENTO', l3b: 'FACILITADO', l4: 'ÓCULOS DE GRAU E SOLAR!', rod: 'SUPER ÓTICA · MOGI DAS CRUZES' },
 ];
 
-const temas = {
-  azul:  { bg: `linear-gradient(160deg, ${C.azul}, ${C.azul2})`, fg: C.branco, destaque: C.ambar, icone: C.branco, chip: C.ambar, chipFg: C.azul },
-  claro: { bg: C.claro, fg: C.azul, destaque: C.azul2, icone: C.azul, chip: C.azul, chipFg: C.branco },
-  ambar: { bg: `linear-gradient(160deg, ${C.ambar}, #FFCF4D)`, fg: C.azul, destaque: C.azul, icone: C.azul, chip: C.azul, chipFg: C.branco },
-};
-
 const html = (c, w, h) => {
-  const t = temas[c.tema];
-  const story = h > 1500;
+  const s = h > 1500; // story
+  const u = w / 1254; // escala em relação ao modelo
   return `<!doctype html><meta charset="utf-8"><style>
   *{box-sizing:border-box;margin:0}
-  body{width:${w}px;height:${h}px;background:${t.bg};color:${t.fg};font-family:'Poppins','Segoe UI',Arial,sans-serif;
-    padding:${story ? '230px 90px 260px' : '90px'};display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
-  .anel{position:absolute;right:-180px;bottom:-180px;width:640px;height:640px;border-radius:50%;border:70px solid ${t.destaque};opacity:.18}
-  .topo{display:flex;align-items:center;gap:20px;z-index:1}
-  .chip{background:${t.chip};color:${t.chipFg};font-weight:700;font-size:28px;letter-spacing:2px;padding:14px 26px;border-radius:40px}
-  .ic{width:130px;margin-bottom:30px}
-  h1{font-size:${story ? 120 : 108}px;line-height:1.05;font-weight:800;letter-spacing:-2px;z-index:1}
-  h1 em{font-style:normal;color:${t.destaque}}
-  p.sub{font-size:44px;line-height:1.3;margin-top:36px;max-width:820px;opacity:.95;z-index:1}
-  p.sub b{color:${t.destaque}}
-  .rod{display:flex;align-items:center;gap:18px;font-size:36px;font-weight:700;z-index:1}
-  .rod svg{width:48px;height:48px}
-  .marca{font-size:30px;font-weight:600;opacity:.8;letter-spacing:1px}
-  </style><body><div class="anel"></div>
-  <div class="topo"><span class="chip">${c.topo}</span></div>
-  <div><div class="ic">${oculos(t.icone)}</div><h1>${c.titulo}</h1><p class="sub">${c.sub}</p></div>
-  <div><div class="rod">${pin(t.destaque)}<span>${c.rodape}</span></div><div class="marca" style="margin-top:18px">SUPER ÓTICA</div></div>
-  </body>`;
+  body{width:${w}px;height:${h}px;background:${AM};
+    font-family:'FreeSans','Liberation Sans',Arial,sans-serif;font-weight:700;font-style:italic;position:relative;overflow:hidden}
+  .rec{position:absolute;background:url(${ref}) no-repeat;-webkit-mask-image:radial-gradient(ellipse at center,#000 55%,transparent 98%);mask-image:radial-gradient(ellipse at center,#000 55%,transparent 98%)}
+  .arm1,.arm2{-webkit-mask-image:linear-gradient(to var(--d),#000 70%,transparent 100%),linear-gradient(to var(--v),#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+  .arm1{--d:left;--v:bottom}.arm2{--d:right;--v:top}
+  .logo{left:${(w - 530 * u) / 2}px;top:${s ? 170 : 40 * u}px;width:${530 * u}px;height:${195 * u}px;background-size:${1254 * u}px;background-position:${-350 * u}px ${-50 * u}px}
+  .arm1{right:0;top:${s ? 0 : 0}px;width:${329 * u}px;height:${228 * u}px;background-size:${1254 * u}px;background-position:${-925 * u}px 0}
+  .arm2{left:0;bottom:${s ? 90 : 0}px;width:${275 * u}px;height:${290 * u}px;background-size:${1254 * u}px;background-position:0 ${-964 * u}px}
+  .col{position:absolute;left:${70 * u}px;right:${70 * u}px;top:${s ? 470 : 255 * u}px;display:flex;flex-direction:column;gap:${22 * u}px}
+  .p1{background:${PR};border-radius:${32 * u}px;padding:${34 * u}px ${44 * u}px;display:flex;align-items:center;gap:${30 * u}px;box-shadow:0 10px 30px #0006}
+  .p1 i{width:${150 * u}px;flex:none;display:block}
+  .p1 span{color:${BR};font-size:${112 * u}px;line-height:1;letter-spacing:-2px;-webkit-text-stroke:${3 * u}px ${BR};text-shadow:${4 * u}px ${6 * u}px 0 #0008;text-transform:none}
+  .p2{background:${AM};border:${5 * u}px solid ${PR};border-radius:${24 * u}px;padding:${22 * u}px ${30 * u}px;color:${PR};font-size:${56 * u}px;-webkit-text-stroke:${2 * u}px ${PR};text-align:center;box-shadow:0 8px 20px #0004}
+  .p3{background:${PR};border-radius:${32 * u}px;padding:${34 * u}px ${44 * u}px;color:${BR};font-size:${100 * u}px;line-height:1.02;-webkit-text-stroke:${3 * u}px currentColor;text-align:center;box-shadow:0 10px 30px #0006}
+  .p3 em{color:${AM};font-style:inherit;display:block}
+  .p4{align-self:center;background:${BR};border-radius:${22 * u}px;padding:${14 * u}px ${46 * u}px;color:${PR};font-size:${48 * u}px;box-shadow:0 8px 20px #0004}
+  .rod{align-self:center;background:${PR};border-radius:${28 * u}px;padding:${22 * u}px ${44 * u}px;display:flex;align-items:center;gap:${22 * u}px;color:${BR};font-size:${54 * u}px}
+  .rod svg{width:${70 * u}px;height:${70 * u}px}
+  .reg{position:absolute;bottom:${s ? 130 : 20 * u}px;width:100%;text-align:center;font-size:${22 * u}px;font-style:normal;font-weight:400;color:${PR}}
+  </style><body>
+  <div class="rec arm1"></div><div class="rec arm2"></div><div class="rec logo"></div>
+  <div class="col">
+    <div class="p1"><i>${c.icone}</i><span>${c.l1}</span></div>
+    <div class="p2">${c.l2}</div>
+    <div class="p3">${c.l3a}<em>${c.l3b}</em></div>
+    <div class="p4">${c.l4}</div>
+    <div class="rod">${pin}<span>${c.rod}</span></div>
+  </div>
+  <div class="reg">consulte regulamento</div></body>`;
 };
 
 (async () => {
@@ -54,6 +61,7 @@ const html = (c, w, h) => {
     for (const [fmt, w, h] of [['feed-1080x1350', 1080, 1350], ['story-1080x1920', 1080, 1920]]) {
       const page = await browser.newPage({ viewport: { width: w, height: h } });
       await page.setContent(html(c, w, h));
+      await page.waitForTimeout(300);
       await page.screenshot({ path: path.join(__dirname, 'png', `${c.id}_${fmt}.png`) });
       await page.close();
     }
